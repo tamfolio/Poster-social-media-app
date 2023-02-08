@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema(
             min: 2,
             max: 50,
         },
-        lasttName: {
+        lastName: {
             type: String,
             required: true,
             min: 2,
@@ -43,3 +43,4 @@ const UserSchema = new mongoose.Schema(
 );
 
 const User = mongoose.model("User", UserSchema);
+export default User;
